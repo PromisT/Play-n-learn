@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+  android:orientation="horizontal"
+    tools:context="com.example.nyamundapt.myapplication4.MainActivity">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cat"
+        android:id="@+id/PicView"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What color is the banana?"
+        android:textSize="28dp"
+        android:textAllCaps="false"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:layout_weight="0.5"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    <Button
+        android:id="@+id/choice1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="290dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:textAllCaps="false"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Orange"
+        android:onClick="Choice1"/>
+        <!--android:inputType="textCapSentences"-->
+
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Yellow"
+        android:onClick="Choice2"/>
+        <!--android:inputType="textCapSentences"-->
+
+    <Button
+        android:id="@+id/choice3"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Green"
+        android:onClick="Choice3"/>
+        <!--android:inputType="textCapSentences"-->
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:textSize="26dp"
+        android:text="0"/>
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    tools:context="com.example.nyamundapt.myapplication4.QuizzActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+    <Button
+        android:id="@+id/b1"
+
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:textSize="28dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:onClick="b1"
+        android:text="Food"
+        android:inputType="textCapSentences"/>
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_gravity="bottom"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="Home"
+        android:textSize="28dp"
+        android:inputType="textCapSentences"
+        android:onClick="b2"/>
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mybutton"
+        android:text="Animals"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:inputType="textCapSentences"
+        android:onClick="b3"/>
+</LinearLayout>
+</LinearLayout>
